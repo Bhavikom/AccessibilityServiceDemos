@@ -56,7 +56,7 @@ public class GlobalActionBarService extends AccessibilityService {
     @Override
     protected void onServiceConnected() {
         // Create an overlay and display the action bar
-        /*WindowManager wm = (WindowManager) getSystemService(WINDOW_SERVICE);
+        WindowManager wm = (WindowManager) getSystemService(WINDOW_SERVICE);
         mLayout = new FrameLayout(this);
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
         lp.type = WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY;
@@ -67,12 +67,12 @@ public class GlobalActionBarService extends AccessibilityService {
         lp.gravity = Gravity.TOP;
         LayoutInflater inflater = LayoutInflater.from(this);
         inflater.inflate(R.layout.action_bar, mLayout);
-        wm.addView(mLayout, lp);*/
+        wm.addView(mLayout, lp);
 
-        /*configurePowerButton();
+        configurePowerButton();
         configureVolumeButton();
         configureScrollButton();
-        configureSwipeButton();*/
+        configureSwipeButton();
 
 
     }

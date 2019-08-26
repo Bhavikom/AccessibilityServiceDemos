@@ -8,6 +8,7 @@ import android.content.pm.PackageManager;
 import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -112,6 +113,8 @@ public class MyAccessibilityService extends AccessibilityService {
                 id = id.split("/")[1];
             }
             String eventData = "id: " + id + ", text:" + source.getText();
+
+            Toast.makeText(getApplicationContext(),source.getText().toString(),Toast.LENGTH_SHORT).show();
 
             Log.d(LOG_TAG, eventData);
             BusProvider.UI_BUS.post(new TextChangeEvent(eventData, shouldToast));

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AccessibilityVoiceRecordDemo</string>
+    <string name="text_timelapse_mark_added">Timelapse mark added</string>
+</resources>
